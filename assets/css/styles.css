@@ -1,0 +1,121 @@
+/* Variables de tema */
+:root {
+  /* Variables para el tema de día */
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #007acc;
+  /* Agrega más variables según sea necesario */
+}
+
+[data-theme="dark"] {
+  /* Variables para el tema de noche */
+  --background-color: #121212;
+  --text-color: #f1f1f1;
+  --primary-color: #1e88e5;
+  /* Agrega más variables según sea necesario */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+main {
+  padding: 2em;
+}
+
+.service {
+  border: 1px solid #ccc;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+/* Ejemplo de estructura BEM */
+.card {
+  /* Estilos generales para la tarjeta */
+}
+
+.card__title {
+  /* Estilos para el título de la tarjeta */
+}
+
+.card__content {
+  /* Estilos para el contenido de la tarjeta */
+}
+
+.card--featured {
+  /* Estilos para tarjetas destacadas */
+}
+
+/* Base styles for all devices */
+/* Aquí puedes incluir estilos generales que se aplican a todos los dispositivos */
+
+/* Media Queries */
+
+/* iPhone 14 Pro Max (390x844) */
+@media only screen and (min-width: 390px) and (max-width: 430px) {
+  /* Estilos específicos para iPhone 14 Pro Max */
+}
+
+/* Samsung Galaxy S20 Ultra (412x915) */
+@media only screen and (min-width: 412px) and (max-width: 450px) {
+  /* Estilos específicos para Samsung Galaxy S20 Ultra */
+}
+
+/* iPad Air (820x1180) */
+@media only screen and (min-width: 768px) and (max-width: 834px) {
+  /* Estilos específicos para iPad Air */
+}
+
+/* iPad Pro (1024x1366) */
+@media only screen and (min-width: 1024px) and (max-width: 1180px) {
+  /* Estilos específicos para iPad Pro */
+}
+
+/* Desktop/Laptop (1280px+) */
+@media only screen and (min-width: 1280px) {
+  /* Estilos específicos para Desktop/Laptop */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
