@@ -1,13 +1,20 @@
-"""<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConIngenio - Consultoría y Desarrollo de Software</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7D4prO8i1AqQYbN5Vxkk+0K8RsE6E1vTIl" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/theme.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Header y navegación -->
@@ -30,13 +37,6 @@
                     <i class="fas fa-moon theme-toggle__icon theme-toggle__icon--dark"></i>
                 </button>
             </div>
-            <div class="header__mobile-toggle">
-                <button id="mobile-toggle" class="mobile-toggle">
-                    <span class="mobile-toggle__bar"></span>
-                    <span class="mobile-toggle__bar"></span>
-                    <span class="mobile-toggle__bar"></span>
-                </button>
-            </div>
         </div>
     </header>
 
@@ -51,84 +51,6 @@
                     <a href="contacto.html" class="btn btn--secondary">Contáctanos</a>
                 </div>
             </div>
-            <div class="hero__image">
-                <img src="assets/img/hero-image.svg" alt="Soluciones digitales">
-            </div>
-        </div>
-    </section>
-
-    <!-- Servicios destacados -->
-    <section class="featured-services">
-        <div class="container">
-            <h2 class="section-title">Servicios destacados</h2>
-            <div class="services__grid" id="featured-services-container">
-                <div class="service-card skeleton">
-                    <div class="service-card__icon skeleton__icon"></div>
-                    <h3 class="service-card__title skeleton__title"></h3>
-                    <p class="service-card__description skeleton__text"></p>
-                </div>
-                <div class="service-card skeleton">
-                    <div class="service-card__icon skeleton__icon"></div>
-                    <h3 class="service-card__title skeleton__title"></h3>
-                    <p class="service-card__description skeleton__text"></p>
-                </div>
-                <div class="service-card skeleton">
-                    <div class="service-card__icon skeleton__icon"></div>
-                    <h3 class="service-card__title skeleton__title"></h3>
-                    <p class="service-card__description skeleton__text"></p>
-                </div>
-            </div>
-            <div class="featured-services__cta">
-                <a href="servicios.html" class="btn btn--secondary">Ver todos los servicios</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Por qué elegirnos -->
-    <section class="why-us">
-        <div class="container">
-            <h2 class="section-title">¿Por qué elegirnos?</h2>
-            <div class="why-us__grid">
-                <div class="why-us__item">
-                    <div class="why-us__icon">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                    <h3 class="why-us__title">Experiencia</h3>
-                    <p class="why-us__description">Más de 10 años en el mercado desarrollando soluciones digitales de alta calidad.</p>
-                </div>
-                <div class="why-us__item">
-                    <div class="why-us__icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3 class="why-us__title">Equipo profesional</h3>
-                    <p class="why-us__description">Contamos con un equipo multidisciplinario de expertos en tecnología y diseño.</p>
-                </div>
-                <div class="why-us__item">
-                    <div class="why-us__icon">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <h3 class="why-us__title">Metodologías ágiles</h3>
-                    <p class="why-us__description">Trabajamos con metodologías ágiles para garantizar resultados en tiempo y forma.</p>
-                </div>
-                <div class="why-us__item">
-                    <div class="why-us__icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3 class="why-us__title">Soporte continuo</h3>
-                    <p class="why-us__description">Ofrecemos soporte técnico y acompañamiento continuo en todas las etapas del proyecto.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to action -->
-    <section class="cta">
-        <div class="container">
-            <div class="cta__content">
-                <h2 class="cta__title">¿Listo para transformar tu negocio?</h2>
-                <p class="cta__text">Contáctanos para una consultoría inicial gratuita y descubre cómo podemos ayudarte.</p>
-                <a href="contacto.html" class="btn btn--primary">Contáctanos ahora</a>
-            </div>
         </div>
     </section>
 
@@ -140,23 +62,6 @@
                     <h3 class="footer__logo">ConIngenio</h3>
                     <p class="footer__description">Soluciones digitales integrales para empresas innovadoras.</p>
                 </div>
-                <div class="footer__contact">
-                    <h4 class="footer__heading">Contacto</h4>
-                    <ul class="footer__contact-list">
-                        <li class="footer__contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Av. Providencia 1234, Oficina 601, Providencia, Santiago, Chile</span>
-                        </li>
-                        <li class="footer__contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+56 2 1234 5678</span>
-                        </li>
-                        <li class="footer__contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>info@coningenio.cl</span>
-                        </li>
-                    </ul>
-                </div>
                 <div class="footer__links">
                     <h4 class="footer__heading">Enlaces</h4>
                     <ul class="footer__links-list">
@@ -166,15 +71,6 @@
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
-                <div class="footer__social">
-                    <h4 class="footer__heading">Síguenos</h4>
-                    <div class="footer__social-icons">
-                        <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="footer__social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
             </div>
             <div class="footer__bottom">
                 <p class="footer__copyright">&copy; 2025 ConIngenio. Todos los derechos reservados.</p>
@@ -182,8 +78,10 @@
         </div>
     </footer>
 
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-qQ2iX+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- Custom Scripts -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/theme.js"></script>
-    <script src="assets/js/api.js"></script>
 </body>
 </html>

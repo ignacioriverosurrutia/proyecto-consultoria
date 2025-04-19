@@ -1,6 +1,5 @@
 /* Variables de tema */
 :root {
-  /* Variables para el tema de día */
   --background-color: #ffffff;
   --text-color: #333333;
   --primary-color: #007acc;
@@ -8,7 +7,6 @@
 }
 
 [data-theme="dark"] {
-  /* Variables para el tema de noche */
   --background-color: #121212;
   --text-color: #f1f1f1;
   --primary-color: #1e88e5;
@@ -118,4 +116,20 @@ footer {
   nav ul {
     flex-direction: column;
   }
+}
+
+.header {
+  background-color: var(--background-color);
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.footer {
+  background-color: var(--background-color);
+  padding: 20px;
+  text-align: center;
 }

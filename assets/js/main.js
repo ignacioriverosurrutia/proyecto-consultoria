@@ -38,20 +38,17 @@ function displayServices(services) {
 // Llamar a la función para obtener los servicios al cargar la página
 document.addEventListener('DOMContentLoaded', fetchServices);
 
-// Implementación del tema día/noche
+// Toggle para el tema día/noche
 const themeToggle = document.getElementById('theme-toggle');
 
 themeToggle.addEventListener('click', () => {
-  if (document.documentElement.getAttribute('data-theme') === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'light');
-    localStorage.setItem('theme', 'light');
-  } else {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
-  }
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
 });
 
-// Verificar preferencia guardada
+// Aplicar el tema guardado
 const savedTheme = localStorage.getItem('theme') || 'light';
 document.documentElement.setAttribute('data-theme', savedTheme);
 
